@@ -3,6 +3,11 @@
   src: url(fonts/Lato-Bold.ttf);
 }
 
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url(fonts/PlayfairDisplay-Regular.ttf);
+}
+
 body {
   background-color: #111619;
 }
@@ -15,6 +20,7 @@ body {
 #header {
   display: flex;
   justify-content: space-between;
+  padding: 0 0 29px;
 }
 
 .logo-and-contacts {
@@ -96,3 +102,76 @@ body {
 #header ul {
   list-style: none;
 }
+
+.gallery {
+  background: url(image/backgroundGallery.png) no-repeat 43px 184px;
+}
+
+.gallery .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery figure {
+  margin: 0 0 38px;
+  display: flex;
+  align-items: center;
+}
+
+.gallery figure img {
+  margin: 0 0 0 110px;
+}
+
+.gallery span {
+  font-size: 28px;
+  font-family: PlayfairDisplay-Regular, sans-serif;
+  line-height: 28px;
+  color: #48555d;
+  letter-spacing: 45px;
+  text-align: center;
+  margin: 0 0 110px 43px;
+}
+
+.button-gallery {
+  width: 108px;
+  height: 108px;
+  border: none;
+  border-radius: 100%;
+  background-color: #14191d;
+  position: relative;
+  cursor: pointer;
+  transform: translate(-42px, 3px);
+}
+
+.button-gallery::after {
+  right: -8px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 91px;
+  height: 77px;
+  top: -3px;
+  background: url(image/ellipse2.png) no-repeat;
+}
+
+.nav-gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 24px;
+  justify-content: center;
+}
+
+.nav-gallery .circle {
+  width: 5px;
+	height: 5px;
+	background-color: #48555d;
+	border-radius: 100%;
+}
+
+.nav-gallery .active {
+  background-color: #ed751b;
+}
+
