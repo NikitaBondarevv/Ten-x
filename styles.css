@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(fonts/Lato-Bold.ttf);
+}
+
+body {
+  background-color: #111619;
+}
+
+.content {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-and-contacts {
+  display: flex;
+  column-gap: 85px;
+  margin: 25px 0 0;
+}
+
+#header .contact-number {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  color: #6b7175;
+  margin: 0 0 0 11px;
+}
+
+#header .navigation {
+  display: flex;
+  column-gap: 75px;
+}
+
+#header .nav-block {
+  display: flex;
+  column-gap: 67px;
+  margin: 30px 6px 0;
+  padding: 0;
+}
+
+#header .nav-block a {
+  color: #53595c;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  font: 15px/15px Lato-Bold, sans-serif;
+}
+
+#header .social-networks {
+  padding: 0;
+  margin: 27px 0 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 39px;
+}
+
+#header .social-networks a {
+  background: url(image/socialMedia.png);
+  display: block;
+  text-indent: -9999px;
+  width: 20px;
+  height: 20px;
+}
+
+#header .social-networks .instagram {
+  position: relative;
+}
+
+#header .social-networks .instagram::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -12px;
+  right: -16px;
+  width: 25px;
+  background: url(image/ellipse.png);
+  height: 50px;
+}
+
+#header .social-networks .facebook {
+  background-position: 0 -24px;
+}
+
+#header .social-networks .twitter {
+  background-position: 0 -51px;
+}
+
+#header .social-networks .behance {
+  background-position: 0 -75px;
+}
+
+#header ul {
+  list-style: none;
+}
