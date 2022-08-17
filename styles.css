@@ -263,18 +263,19 @@ body {
 }
 
 .strategy figcaption {
-  width: 100px;
   transform: translate(255px, -163px);
 }
 
-.strategy time {
+.strategy time,
+.company-offer time {
   font-size: 44px;
   line-height: 70px;
   color: #fff;
   font-family: PlayfairDisplay-Regular, serif;
 }
 
-.strategy mark {
+.strategy mark,
+.company-offer mark {
   font-size: 44px;
   line-height: 70px;
   color: #22292d;
@@ -286,14 +287,16 @@ body {
   margin: -44px 0 0;
 }
 
-.strategy h1 {
+.strategy h1,
+.company-offer h1 {
   color: #fff;
   font-size: 44px;
   line-height: 58px;
   font-family: PlayfairDisplay-Regular, serif;
 }
 
-.strategy p {
+.strategy p,
+.company-offer p {
   margin: 0 0 38px;
   width: 630px;
   font-size: 22px;
@@ -302,7 +305,8 @@ body {
   font-family: Lato-Light, sans-serif;
 }
 
-.strategy a {
+.strategy a ,
+.company-offer a {
   background-image: linear-gradient(to right, #e84b37, #ee7d16);
   font-size: 14px;
   line-height: 32px;
@@ -315,4 +319,40 @@ body {
   text-align: center;
   width: 160px;
   letter-spacing: 2px;
+}
+
+.company-offer {
+  padding: 172px 0 0;
+}
+
+.company-offer .content {
+  display: flex;
+  column-gap: 108px;
+}
+
+.company-offer article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: -13px 0 0 144px;
+}
+
+.company-offer h1 {
+  text-align: end;
+  line-height: 69px;
+  margin: 0 0 10px;
+}
+
+
+.company-offer p {
+  text-align: end;
+  margin: 0 0 72px;
+}
+
+.company-offer figure {
+  margin: 0;
+}
+
+.company-offer figcaption {
+  transform: translate(520px, -157px);
 }
