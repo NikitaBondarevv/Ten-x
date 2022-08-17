@@ -8,6 +8,16 @@
   src: url(fonts/PlayfairDisplay-Regular.ttf);
 }
 
+@font-face {
+  font-family: "Lato-Light";
+  src: url(fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: "Proxima-Nova-Extrabold";
+  src: url(fonts/Proxima-Nova-Extrabold.ttf);
+}
+
 body {
   background-color: #111619;
   min-width: 1900px;
@@ -238,3 +248,71 @@ body {
   transform: translate(-215px, 0);
 }
 
+.strategy {
+  padding: 306px 0 0;
+  background: url(image/map.png) no-repeat -359px 83px;
+}
+
+.strategy .content {
+  display: flex;
+  column-gap: 112px;
+}
+
+.strategy figure {
+  margin: 0 0 0 38px;
+}
+
+.strategy figcaption {
+  width: 100px;
+  transform: translate(255px, -163px);
+}
+
+.strategy time {
+  font-size: 44px;
+  line-height: 70px;
+  color: #fff;
+  font-family: PlayfairDisplay-Regular, serif;
+}
+
+.strategy mark {
+  font-size: 44px;
+  line-height: 70px;
+  color: #22292d;
+  background: none;
+  font-family: PlayfairDisplay-Regular, serif;
+} 
+
+.strategy article {
+  margin: -44px 0 0;
+}
+
+.strategy h1 {
+  color: #fff;
+  font-size: 44px;
+  line-height: 58px;
+  font-family: PlayfairDisplay-Regular, serif;
+}
+
+.strategy p {
+  margin: 0 0 38px;
+  width: 630px;
+  font-size: 22px;
+  line-height: 34px;
+  color: #fff;
+  font-family: Lato-Light, sans-serif;
+}
+
+.strategy a {
+  background-image: linear-gradient(to right, #e84b37, #ee7d16);
+  font-size: 14px;
+  line-height: 32px;
+  font-family: Proxima-Nova-Extrabold, serif;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 19px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  width: 160px;
+  letter-spacing: 2px;
+}
