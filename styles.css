@@ -10,6 +10,7 @@
 
 body {
   background-color: #111619;
+  min-width: 1900px;
 }
 
 .content {
@@ -105,6 +106,7 @@ body {
 
 .gallery {
   background: url(image/backgroundGallery.png) no-repeat 43px 184px;
+  padding: 0 0 75px;
 }
 
 .gallery .content {
@@ -113,24 +115,30 @@ body {
   align-items: center;
 }
 
-.gallery figure {
+.gallery .gallery-images {
   margin: 0 0 38px;
   display: flex;
   align-items: center;
 }
 
-.gallery figure img {
-  margin: 0 0 0 110px;
+.gallery figure {
+  margin: 0;
+  padding: 0;
 }
 
-.gallery span {
-  font-size: 28px;
-  font-family: PlayfairDisplay-Regular, sans-serif;
-  line-height: 28px;
-  color: #48555d;
-  letter-spacing: 45px;
+.gallery figure img {
+  margin: 0 0 0 110px;
+  width: 1210px;
+}
+
+.gallery figcaption {
+  margin: 0 0 73px 151px;
   text-align: center;
-  margin: 0 0 110px 43px;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 45px;
+  color: #48555d;
+  font-family: PlayfairDisplay-Regular, serif;
 }
 
 .button-gallery {
@@ -141,7 +149,7 @@ body {
   background-color: #14191d;
   position: relative;
   cursor: pointer;
-  transform: translate(-42px, 3px);
+  transform: translate(-40px, -66px);
 }
 
 .button-gallery::after {
@@ -164,6 +172,21 @@ body {
   justify-content: center;
 }
 
+.images {
+  list-style: none;
+  display: flex;
+  margin: 0 0 35px;
+  padding: 0;
+}
+
+.images li {
+  display: none;
+}
+
+.images .active {
+  display: block;
+}
+
 .nav-gallery .circle {
   width: 5px;
 	height: 5px;
@@ -171,7 +194,47 @@ body {
 	border-radius: 100%;
 }
 
+.nav-gallery .border {
+  display: block;
+  border: 2px solid #ed751b;
+  padding: 10px;
+  border-radius: 100%;
+}
+
 .nav-gallery .active {
   background-color: #ed751b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-player .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-player h1 {
+  text-align: center;
+  font-size: 70px;
+  line-height: 100px;
+  color: #fff;
+  width: 1550px;
+  font-family: PlayfairDisplay-Regular, serif;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  margin: 0 0 17px 37px;
+}
+
+.player button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 35px;
+  height: 40px;
+  transform: translate(-215px, 0);
 }
 
