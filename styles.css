@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: "PlayfairDisplay-Bold";
+  src: url(fonts/PlayfairDisplay-Bold.ttf);
+}
+
+@font-face {
   font-family: "Lato-Light";
   src: url(fonts/Lato-Light.ttf);
 }
@@ -16,6 +21,16 @@
 @font-face {
   font-family: "Proxima-Nova-Extrabold";
   src: url(fonts/Proxima-Nova-Extrabold.ttf);
+}
+
+@font-face {
+  font-family: "Proxima-Nova-Semibold";
+  src: url(fonts/Proxima-Nova-Semibold.ttf);
+}
+
+@font-face {
+  font-family: "Proxima-Nova-Regular";
+  src: url(fonts/Proxima-Nova-Regular.ttf);
 }
 
 body {
@@ -267,6 +282,7 @@ body {
 }
 
 .strategy figcaption {
+  width: 110px;
   transform: translate(255px, -163px);
 }
 
@@ -331,7 +347,7 @@ body {
 }
 
 .company-offer {
-  padding: 172px 0 0;
+  padding: 172px 0 150px;
 }
 
 .company-offer .content {
@@ -363,5 +379,124 @@ body {
 }
 
 .company-offer figcaption {
+  width: 110px;
   transform: translate(520px, -157px);
+}
+
+.portfolio {
+  padding: 215px 0 0 ;
+  text-align: center;
+  background: url(image/portfolioImages/portfolio.png) no-repeat;
+}
+
+.portfolio h1 {
+  font-size: 18px;
+  line-height: 50px;
+  color: #fff;
+  font-family: PlayfairDisplay-Bold, serif;
+}
+
+.portfolio ul {
+  margin: 0 33px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 112px 0;
+}
+
+.portfolio li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio figure {
+  margin: 0;
+  width: 480px;
+  height: 630px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 32px;
+  color: #000;
+  font-family: Proxima-Nova-Semibold, sans-serif;
+}
+
+.portfolio span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  font-family: Proxima-Nova-Regular, sans-serif;
+}
+
+.portfolio a {
+  background-image: linear-gradient(to right, #e84b37, #ee7d16);
+  font-size: 14px;
+  line-height: 32px;
+  font-family: Proxima-Nova-Extrabold, serif;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 19px;
+  border-radius: 2px;
+  display: block;
+  text-align: center;
+  width: 160px;
+  letter-spacing: 2px;
+  transform: translate(0, -24px);
+}
+
+.end-of-thino img {
+  margin: -14px 0 87px;
+}
+
+.end-of-thino h2 {
+  margin: 0 0 19px;
+}
+
+.end-of-thino a {
+  display: none;
+}
+
+.het-boerenveensche img {
+  margin: -41px 38px -12px 0;
+}
+
+.het-boerenveensche h2 {
+  margin: 0 0 16px;
+}
+
+.bluerocket img {
+  margin: -53px 0 73px 4px;
+}
+
+.bluerocket h2 {
+  margin: 0 0 22px;
+}
+
+.harmony-poliform img {
+  margin: -6px 0 35px 15px;
+}
+
+.harmony-poliform h2 {
+  margin: 0 0 13px;
+}
+
+.rowenta-studiodry img {
+  margin: 12px 0 92px 19px;
+}
+
+.rowenta-studiodry h2 {
+  margin: 0 0 15px;
+}
+
+.fritsch-durisotti img {
+  margin: -8px 16px 33px 0;
 }
