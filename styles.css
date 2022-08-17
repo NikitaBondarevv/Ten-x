@@ -67,6 +67,10 @@ body {
   font: 15px/15px Lato-Bold, sans-serif;
 }
 
+#header .nav-block a:hover {
+  text-decoration: underline;
+}
+
 #header .social-networks {
   padding: 0;
   margin: 27px 0 0;
@@ -319,6 +323,11 @@ body {
   text-align: center;
   width: 160px;
   letter-spacing: 2px;
+}
+
+.strategy a:hover ,
+.company-offer a:hover {
+  text-decoration: underline;
 }
 
 .company-offer {
