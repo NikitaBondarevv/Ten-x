@@ -453,6 +453,12 @@ body {
   transform: translate(0, -24px);
 }
 
+.clicked-element {
+  background: url(image/portfolioImages/activeElementBackground.png) no-repeat 28px 0;
+  padding: 20px 0 0;
+  transform: translate(0, -16px);
+}
+
 .end-of-thino img {
   margin: -14px 0 87px;
 }
@@ -499,4 +505,26 @@ body {
 
 .fritsch-durisotti img {
   margin: -8px 16px 33px 0;
+}
+
+.portfolio .active {
+  position: relative;
+}
+
+.portfolio .active::after {
+  content: "";
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  border: 60px solid transparent;
+  border-right: 60px solid #e84b37;
+  border-bottom: 60px solid #e84b37;
+}
+
+.portfolio .active-button {
+  background: url(image/portfolioImages/vectorSmartObject.png) no-repeat 0;
+  display: block;
+  width: 1px;
+  transform: translate(205px, -42px);
 }
