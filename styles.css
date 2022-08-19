@@ -139,7 +139,7 @@ body {
 }
 
 .gallery {
-  background: url(image/backgroundGallery.png) no-repeat 43px 184px;
+  background: url(image/backgroundGallery.png) no-repeat 51px 184px;
   padding: 0 0 75px;
 }
 
@@ -161,7 +161,7 @@ body {
 }
 
 .gallery figure img {
-  margin: 0 0 0 110px;
+  margin: 0 0 0 115px;
   width: 1210px;
 }
 
@@ -200,7 +200,7 @@ body {
 .nav-gallery {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 5px;
   display: flex;
   column-gap: 24px;
   justify-content: center;
@@ -412,7 +412,7 @@ body {
   width: 2px;
   height: 129px;
   top: 51px;
-  right: 50.2%;
+  right: 50.1%;
 }
 
 .portfolio ul {
@@ -638,7 +638,7 @@ body {
 }
 
 .services .nav-gallery {
-  margin: 0 0 512px 19px;
+  margin: 0 0 512px 25px;
 }
 
 .services .nav-gallery .circle {
@@ -653,7 +653,7 @@ body {
   font-size: 70px;
   line-height: 95.67px;
   color: #fff;
-  margin: 0 0 0 18px;
+  margin: -4px 0 0 20px;
   font-family: PlayfairDisplay-Regular, sans-serif;
 }
 
@@ -670,14 +670,14 @@ body {
   width: 480px;
   background-color: #ac378e;
   left: 36.6%;
-  top: 91px;
+  top: 95px;
 }
 
 #footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 142px 0 209px;
+  padding: 146px 0 209px;
 }
 
 #footer .logo {
