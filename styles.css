@@ -347,7 +347,7 @@ body {
 }
 
 .company-offer {
-  padding: 172px 0 150px;
+  padding: 172px 0 130px;
 }
 
 .company-offer .content {
@@ -384,16 +384,30 @@ body {
 }
 
 .portfolio {
-  padding: 215px 0 0 ;
+  padding: 157px 0 0 ;
   text-align: center;
-  background: url(image/portfolioImages/portfolio.png) no-repeat;
+  background: url(image/portfolioImages/portfolio.png) no-repeat 45px 2px;
 }
 
 .portfolio h1 {
   font-size: 18px;
   line-height: 50px;
   color: #fff;
+  margin: 0 0 101px 10px;
+  letter-spacing: 11px;
   font-family: PlayfairDisplay-Bold, serif;
+  position: relative;
+}
+
+.portfolio h1::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #ed7b16;
+  width: 2px;
+  height: 129px;
+  top: 51px;
+  right: 50.2%;
 }
 
 .portfolio ul {
