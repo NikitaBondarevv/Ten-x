@@ -454,6 +454,23 @@ body {
   cursor: pointer;
 }
 
+.portfolio li:hover {
+  background: url(image/portfolioImages/activeElementBackground.png) no-repeat 28px 0;
+  padding: 20px 0 20px;
+  transform: translate(0, -16px);
+}
+
+.portfolio li:hover:after {
+  content: "";
+  bottom: 42px;
+  right: 49px;
+  position: absolute;
+  display: block;
+  border: 60px solid transparent;
+  border-right: 60px solid #e84b37;
+  border-bottom: 60px solid #e84b37;
+}
+
 .portfolio figure {
   margin: 0;
   width: 480px;
@@ -490,14 +507,12 @@ body {
   transform: translate(0, -24px);
 }
 
-.portfolio .button:hover {
-  text-decoration: underline;
+.portfolio li:hover > .button {
+  display: none;
 }
 
-.clicked-element {
-  background: url(image/portfolioImages/activeElementBackground.png) no-repeat 28px 0;
-  padding: 20px 0 20px;
-  transform: translate(0, -16px);
+.portfolio .button:hover {
+  text-decoration: underline;
 }
 
 .end-of-thino img {
@@ -548,26 +563,16 @@ body {
   position: relative;
 }
 
-.portfolio .active::after {
-  content: "";
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  display: block;
-  border: 60px solid transparent;
-  border-right: 60px solid #e84b37;
-  border-bottom: 60px solid #e84b37;
-}
-
 .portfolio .active-button {
   background: url(image/portfolioImages/vectorSmartObject.png) no-repeat 0;
-  display: block;
+  display: none;
   width: 1px;
   transform: translate(205px, -42px);
+  z-index: 1;
 }
 
-.portfolio .hidden-button {
-  display: none;
+.portfolio li:hover > .active-button {
+  display: block;
 }
 
 .services {
@@ -620,7 +625,7 @@ body {
 .services .list-of-services {
   display: flex;
   list-style: none;
-  margin: 0 0 77px 141px;
+  margin: 0 0 139px 141px;
   padding: 0;
   column-gap: 69px;
   text-align: start;
@@ -630,15 +635,11 @@ body {
   margin: 0 98px 0 0;
 }
 
-.list-of-services li {
-  cursor: pointer;
-}
-
 .services .list-of-services img {
   margin: 0 0 12px;
 }
 
-.services .list-of-services .active {
+.services .list-of-services li:hover {
   background-image: linear-gradient(to right top, #5d00c9, #d5536f);
   padding: 38px 48px 0;
   height: 340px;
