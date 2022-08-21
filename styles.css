@@ -155,7 +155,7 @@ body {
 }
 
 .gallery .gallery-images {
-  margin: 0 0 38px;
+  margin: 0 0 177px;
   display: flex;
   align-items: center;
 }
@@ -163,20 +163,26 @@ body {
 .gallery figure {
   margin: 0;
   padding: 0;
-}
-
-.gallery figure img {
-  margin: 0 0 0 115px;
+  height: 528px;
   width: 1210px;
 }
 
+.gallery figure img {
+  margin: 0 0 38px 59px;
+  display: none;
+}
+
 .gallery figcaption {
-  margin: 0 0 73px 151px;
+  margin: 0 0 0 156px;
   text-align: center;
   font-size: 28px;
   line-height: 28px;
   letter-spacing: 45px;
   color: #48555d;
+}
+
+.gallery figcaption span {
+  display: none;
 }
 
 .button-gallery {
@@ -187,7 +193,7 @@ body {
   background-color: #14191d;
   position: relative;
   cursor: pointer;
-  transform: translate(-40px, -66px);
+  transform: translate(15px, 3px);
 }
 
 .button-gallery::after {
@@ -210,18 +216,22 @@ body {
   justify-content: center;
 }
 
-.images {
+#images {
   list-style: none;
   display: flex;
-  margin: 0 0 32px;
+  margin: 0;
   padding: 0;
 }
 
-.images li {
+#images li {
   display: none;
 }
 
-.images .active {
+#images .active-image {
+  display: block;
+}
+
+#images .active {
   display: block;
 }
 
@@ -460,6 +470,10 @@ body {
   transform: translate(0, -24px);
 }
 
+.portfolio a:hover {
+  text-decoration: underline;
+}
+
 .clicked-element {
   background: url(image/portfolioImages/activeElementBackground.png) no-repeat 28px 0;
   padding: 20px 0 0;
@@ -579,6 +593,10 @@ body {
   border-radius: 2px;
 }
 
+.services a:hover {
+  text-decoration: underline;
+}
+
 .services .list-of-services {
   display: flex;
   list-style: none;
@@ -588,15 +606,19 @@ body {
   text-align: start;
 }
 
-.services .list-of-services li:nth-child(2n) {
+.list-of-services li:nth-child(2n) {
   margin: 0 98px 0 0;
+}
+
+.list-of-services li {
+  cursor: pointer;
 }
 
 .services .list-of-services img {
   margin: 0 0 12px;
 }
 
-.services .active {
+.services .list-of-services .active {
   background-image: linear-gradient(to right top, #5d00c9, #d5536f);
   padding: 38px 48px 0;
   height: 340px;
