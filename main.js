@@ -6,37 +6,36 @@
   const classHiddenButton = 'hidden-button';
   const classActiveButton = '.active-button';
   const classActive = 'active';
+  const classActiveTwo = '.active';
+  const classButtonGalleryHidden = '.button-gallery-hidden';
+  const images = document.getElementById('images');
   let currentActiveElement;
 
-  portfolioUl.addEventListener('click', ({ target }) => {
-    if (target.tagName !== 'FIGURE') return;
+  document.querySelector('.button-gallery').addEventListener('click', () => {
+    if (images.querySelector(classActiveTwo).nextElementSibling === null) {
+      return;
+    }
 
-    portfolio.querySelectorAll('figure').forEach(element => element.classList.remove(classActive));
-    portfolio.querySelectorAll('li').forEach(element => element.classList.remove(classClickedElement));
-    portfolio.querySelectorAll('.button').forEach(element => element.classList.remove(classHiddenButton))
-    portfolio.querySelectorAll(classActiveButton).forEach(element => element.classList.add(classHiddenButton))
-
-    target.classList.add(classActive);
-    target.parentNode.classList.add(classClickedElement);
-    target.parentNode.querySelectorAll('a')[1].classList.add(classHiddenButton)
-    target.parentNode.querySelector(classActiveButton).classList.remove(classHiddenButton)
+    document.querySelector(classButtonGalleryHidden).classList.add('show-button');
+    images.querySelector(classActiveTwo).nextElementSibling.classList.add(classActive);
+    images.querySelector(classActiveTwo).classList.remove(classActive);
   });
 
-  servicesUl.addEventListener('click', ({ target }) => {
-  if (target.tagName !== 'LI') return;
+  document.querySelector(classButtonGalleryHidden).addEventListener('click', () => {
+    if (images.querySelectorAll('li')[1].classList.contains(classActive) === true) {
+      document.querySelector(classButtonGalleryHidden).classList.remove('show-button');
+    }
 
-  if (currentActiveElement === target) {
-    currentActiveElement.classList.remove(classActive);
-    currentActiveElement = undefined;
-
-    return;
-  }
-
-  if (currentActiveElement) {
-    currentActiveElement.classList.remove(classActive);
-  }
-
-  currentActiveElement = target;
-  target.classList.add(classActive);
+    if (images.querySelector(classActiveTwo).previousElementSibling === null) {
+      return;
+    }
+      
+    images.querySelector(classActiveTwo).previousElementSibling.classList.add(classActive);
+      
+    if (images.querySelector(classActiveTwo).nextElementSibling.classList.contains(classActive) === true) {
+      images.querySelector(classActiveTwo).nextElementSibling.classList.remove(classActive);
+    }
+      
+    images.lastElementChild.classList.remove(classActive);
   });
-})()
+})();
