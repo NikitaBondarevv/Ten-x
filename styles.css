@@ -432,6 +432,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 .portfolio figure {
@@ -470,13 +471,13 @@ body {
   transform: translate(0, -24px);
 }
 
-.portfolio a:hover {
+.portfolio .button:hover {
   text-decoration: underline;
 }
 
 .clicked-element {
   background: url(image/portfolioImages/activeElementBackground.png) no-repeat 28px 0;
-  padding: 20px 0 0;
+  padding: 20px 0 20px;
   transform: translate(0, -16px);
 }
 
@@ -486,10 +487,6 @@ body {
 
 .end-of-thino h2 {
   margin: 0 0 19px;
-}
-
-.end-of-thino a {
-  display: none;
 }
 
 .het-boerenveensche img {
@@ -548,6 +545,10 @@ body {
   display: block;
   width: 1px;
   transform: translate(205px, -42px);
+}
+
+.portfolio .hidden-button {
+  display: none;
 }
 
 .services {
@@ -640,6 +641,10 @@ body {
 
 .services .nav-gallery {
   margin: 0 0 512px 25px;
+}
+
+.services .nav-gallery li {
+  cursor: pointer;
 }
 
 .services .nav-gallery .circle {
