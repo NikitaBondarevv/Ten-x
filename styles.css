@@ -54,7 +54,7 @@ body {
 #header {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 29px;
+  padding: 0 0 29px;
   flex: 0 0 auto;
   width: 100%;
 }
@@ -67,7 +67,6 @@ main {
   display: flex;
   column-gap: 85px;
   margin: 25px 0 0;
-  height: 30px;
 }
 
 #header .contact-number {
@@ -77,31 +76,30 @@ main {
   margin: 0 0 0 11px;
 }
 
-.header-navigation {
+#header .navigation {
   display: flex;
   column-gap: 75px;
-  margin: -5px 0 0 40.5%;
 }
 
-#header ul {
+#header .nav-block {
   display: flex;
   column-gap: 67px;
   margin: 30px 6px 0;
   padding: 0;
 }
 
-#header ul .active {
+#header .nav-block .active {
   color: #a53689;
 }
 
-#header ul a {
+#header .nav-block a {
   color: #53595c;
   letter-spacing: 2.5px;
   text-decoration: none;
   font: 15px/15px Lato-Bold, sans-serif;
 }
 
-#header ul a:hover {
+#header .nav-block a:hover {
   color: #a53689;
 }
 
@@ -154,7 +152,7 @@ main {
 
 .gallery {
   background: url(image/backgroundGallery.png) no-repeat 51px 184px;
-  margin: 0 0 75px;
+  padding: 0 0 75px;
 }
 
 .gallery .content {
@@ -177,7 +175,7 @@ main {
 }
 
 .gallery figure img {
-  margin: 0 0 32px 59px;
+  margin: 0 0 38px 59px;
 }
 
 .gallery figcaption {
@@ -211,7 +209,7 @@ main {
   background: url(image/ellipse2.png) no-repeat;
 }
 
-.hidden {
+.button-gallery-hidden {
   display: none;
   width: 108px;
   height: 108px;
@@ -223,7 +221,7 @@ main {
   transform: translate(-1377px, 3px) rotate(180deg);
 }
 
-.hidden::after {
+.button-gallery-hidden::after {
   right: -8px;
   position: absolute;
   content: "";
@@ -238,7 +236,7 @@ main {
   display: block;
 }
 
-.paging {
+.nav-gallery {
   list-style: none;
   padding: 0;
   margin: 0 0 0 5px;
@@ -262,31 +260,26 @@ main {
   display: block;
 }
 
-.paging li {
+.nav-gallery .circle {
   width: 5px;
 	height: 5px;
 	background-color: #48555d;
 	border-radius: 100%;
   cursor: pointer;
-  position: relative;
 }
 
-.paging .active::after,
-.paging li:hover::after {
-  content: "";
-  position: absolute;
-  top: -9px;
-  left: -9px;
+.nav-gallery .border {
   display: block;
   border: 2px solid #ed751b;
   padding: 10px;
   border-radius: 100%;
 }
 
-.paging .active,
-.paging li:hover,
-.services .paging li:hover {
+.nav-gallery .active-circle {
   background-color: #ed751b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .music-player .content {
@@ -301,7 +294,6 @@ main {
   line-height: 100px;
   color: #fff;
   width: 1550px;
-  font-weight: 100;
 }
 
 .player {
@@ -321,7 +313,6 @@ main {
 
 .strategy {
   padding: 306px 0 0;
-  margin: 0 0 172px;
   background: url(image/map.png) no-repeat -359px 83px;
 }
 
@@ -393,16 +384,19 @@ main {
 }
 
 .company-offer {
+  padding: 172px 0 127px;
+}
+
+.company-offer .content {
   display: flex;
-  column-gap: 110px;
-  margin: 0 0 127px;
+  column-gap: 108px;
 }
 
 .company-offer article {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: -13px 0 0 194px;
+  margin: -13px 0 0 144px;
 }
 
 .company-offer h1 {
@@ -427,8 +421,7 @@ main {
 }
 
 .portfolio {
-  padding: 156px 0 0;
-  margin: 0 0 247px;
+  padding: 157px 0 153px;
   text-align: center;
   background: url(image/portfolioImages/portfolio.png) no-repeat 45px 2px;
 }
@@ -436,7 +429,7 @@ main {
 .portfolio h1 {
   font: 18px/50px PlayfairDisplay-Bold, serif;
   color: #fff;
-  margin: 0 0 84px 10px;
+  margin: 0 0 101px 10px;
   letter-spacing: 11px;
   position: relative;
 }
@@ -448,18 +441,17 @@ main {
   background-color: #ed7b16;
   width: 2px;
   height: 129px;
-  top: 50px;
-  right: 50.2%;
-  z-index: 1;
+  top: 51px;
+  right: 50.1%;
 }
 
 .portfolio ul {
-  margin: 0 33px 0 60px;
+  margin: 0 33px;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 122px 31px;
+  grid-gap: 112px 0;
 }
 
 .portfolio li {
@@ -467,19 +459,18 @@ main {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  padding: 20px 0 20px;
-  position: relative;
-  width: 521px;
 }
 
 .portfolio li:hover {
-  background-image: linear-gradient(to right top, #5d00c9, #d5536f);
+  background: url(image/portfolioImages/activeElementBackground.png) no-repeat 28px 0;
+  padding: 20px 0 20px;
+  transform: translate(0, -16px);
 }
 
 .portfolio li:hover:after {
   content: "";
-  bottom: 20px;
-  right: 20px;
+  bottom: 42px;
+  right: 49px;
   position: absolute;
   display: block;
   border: 60px solid transparent;
@@ -520,8 +511,7 @@ main {
   text-align: center;
   width: 160px;
   letter-spacing: 2px;
-  position: absolute;
-  bottom: -9px;
+  transform: translate(0, -24px);
 }
 
 .portfolio li:hover > .button {
@@ -584,7 +574,7 @@ main {
   background: url(image/portfolioImages/vectorSmartObject.png) no-repeat 0;
   display: none;
   width: 1px;
-  transform: translate(205px, -52px);
+  transform: translate(205px, -42px);
   z-index: 1;
 }
 
@@ -593,8 +583,8 @@ main {
 }
 
 .services {
-  margin: 0 0 276px;
-  background: url(image/roadPicture.png) no-repeat 0 207px;
+  padding: 61px 0 130px;
+  background: url(image/roadPicture.png) no-repeat 0 175px;
   text-align: center;
 }
 
@@ -602,7 +592,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 128px 21px;
+  margin: 0 0 164px 21px;
 }
 
 .services strong {
@@ -625,7 +615,7 @@ main {
   margin: 0 0 48px;
 }
 
-.services .link {
+.services a {
   text-decoration: none;
   color: #fff;
   font: 14px/32px Proxima-Nova-Extrabold, sans-serif;
@@ -642,21 +632,14 @@ main {
 .services .list-of-services {
   display: flex;
   list-style: none;
-  margin: 0 0 78px 94px;
+  margin: 0 0 139px 141px;
   padding: 0;
-  column-gap: 20px;
+  column-gap: 69px;
   text-align: start;
 }
 
-.list-of-services li {
-  padding: 39px 48px 0;
-  height: 339px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
 .list-of-services li:nth-child(2n) {
-  margin: 0 50px 0 0;
+  margin: 0 98px 0 0;
 }
 
 .services .list-of-services img {
@@ -665,6 +648,10 @@ main {
 
 .services .list-of-services li:hover {
   background-image: linear-gradient(to right top, #5d00c9, #d5536f);
+  padding: 38px 48px 0;
+  height: 340px;
+  margin: -38px 0 0 -49px;
+  border-radius: 3px;
 }
 
 .services h2 {
@@ -679,16 +666,19 @@ main {
   color: #fff;
 }
 
-.services .paging {
+.services .nav-gallery {
   margin: 0 0 512px 25px;
 }
 
-.services .paging li {
-  background-color: #fff;
+.services .nav-gallery li {
   cursor: pointer;
 }
 
-.services .paging .active {
+.services .nav-gallery .circle {
+  background-color: #fff;
+}
+
+.services .nav-gallery .active-circle {
   background-color: #ed751b;
 }
 
@@ -699,21 +689,19 @@ main {
   margin: -4px 0 0 20px;
 }
 
-.services .contact .email {
+.services .contact address {
   font-style: normal;
   position: relative;
-  text-decoration: none;
-  color: #fff;
 }
 
-.services .contact .email::after {
+.services .contact address::after {
   content: "";
   display: block;
   position: absolute;
   height: 2px;
   width: 480px;
   background-color: #ac378e;
-  left: -4px;
+  left: 36.6%;
   top: 95px;
 }
 
@@ -721,7 +709,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 209px;
+  padding: 146px 0 209px;
   flex: 0 0 auto;
 }
 
@@ -729,7 +717,7 @@ main {
   margin: 0 0 54px;
 }
 
-.footer-navigation ul {
+#footer .nav-block {
   display: flex;
   list-style: none;
   margin: -2px 13px 56px 0;
@@ -737,7 +725,7 @@ main {
   position: relative;
 }
 
-.footer-navigation ul::before {
+#footer .nav-block::before {
   content: "";
   display: block;
   position: absolute;
@@ -748,7 +736,7 @@ main {
   background-image: linear-gradient(to right, #d5536f, #5d00c9);
 }
 
-.footer-navigation ul::after {
+#footer .nav-block::after {
   content: "";
   display: block;
   position: absolute;
@@ -759,23 +747,23 @@ main {
   background-image: linear-gradient(to right, #5d00c9, #d5536f);
 }
 
-.footer-navigation ul li {
+#footer .nav-block li {
   font: 14px/14px Lato-Regular, sans-serif;
   letter-spacing: 2px;
   color: #6c7276;
 }
 
-.footer-navigation ul a {
+#footer .nav-block a {
   text-decoration: none;
   color: #6c7276;
   margin: 0 25px 0 0;
 }
 
-.footer-navigation ul a:hover {
+#footer .nav-block a:hover {
   color: #a53689;
 }
 
-.footer-navigation ul .active {
+#footer .nav-block .active {
   color: #a53689;
 }
 
