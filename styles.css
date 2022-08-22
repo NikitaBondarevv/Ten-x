@@ -39,16 +39,14 @@
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   background-color: #111619;
-  min-width: 1900px;
+  width: 1920px;
   font: 16px/24px PlayfairDisplay-Regular, sans-serif;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .content {
-  max-width: 1800px;
+  max-width: 1820px;
   margin: 0 auto;
 }
 
@@ -56,12 +54,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 0 29px;
-  flex: 0 0 auto;
-  width: 100%;
-}
-
-main {
-  flex: 1 0 auto;
 }
 
 .logo-and-contacts {
@@ -724,7 +716,6 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 0 0 209px;
-  flex: 0 0 auto;
 }
 
 #footer .logo {
