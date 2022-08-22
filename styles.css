@@ -44,6 +44,7 @@ body {
   background-color: #111619;
   min-width: 1900px;
   font: 16px/24px PlayfairDisplay-Regular, sans-serif;
+  margin: 0;
 }
 
 .content {
@@ -66,7 +67,8 @@ main {
 .logo-and-contacts {
   display: flex;
   column-gap: 85px;
-  margin: 25px 0 0;
+  margin: 32px 0 0 6px;
+  height: 30px;
 }
 
 #header .contact-number {
@@ -76,36 +78,37 @@ main {
   margin: 0 0 0 11px;
 }
 
-#header .navigation {
+.header-navigation {
   display: flex;
   column-gap: 75px;
+  margin: 3px 0 0 40.5%;
 }
 
-#header .nav-block {
+#header ul {
   display: flex;
   column-gap: 67px;
   margin: 30px 6px 0;
   padding: 0;
 }
 
-#header .nav-block .active {
+#header ul .active {
   color: #a53689;
 }
 
-#header .nav-block a {
+#header ul a {
   color: #53595c;
   letter-spacing: 2.5px;
   text-decoration: none;
   font: 15px/15px Lato-Bold, sans-serif;
 }
 
-#header .nav-block a:hover {
+#header ul a:hover {
   color: #a53689;
 }
 
 #header .social-networks {
   padding: 0;
-  margin: 27px 0 0;
+  margin: 34px 0 0;
   display: flex;
   flex-direction: column;
   row-gap: 39px;
@@ -152,7 +155,7 @@ main {
 
 .gallery {
   background: url(image/backgroundGallery.png) no-repeat 51px 184px;
-  padding: 0 0 75px;
+  margin: 0 0 75px;
 }
 
 .gallery .content {
@@ -175,11 +178,11 @@ main {
 }
 
 .gallery figure img {
-  margin: 0 0 38px 59px;
+  margin: 0 0 32px 59px;
 }
 
 .gallery figcaption {
-  margin: 0 0 0 156px;
+  margin: 0 0 0 161px;
   text-align: center;
   font-size: 28px;
   line-height: 28px;
@@ -209,7 +212,7 @@ main {
   background: url(image/ellipse2.png) no-repeat;
 }
 
-.button-gallery-hidden {
+.hidden {
   display: none;
   width: 108px;
   height: 108px;
@@ -221,7 +224,7 @@ main {
   transform: translate(-1377px, 3px) rotate(180deg);
 }
 
-.button-gallery-hidden::after {
+.hidden::after {
   right: -8px;
   position: absolute;
   content: "";
@@ -236,10 +239,10 @@ main {
   display: block;
 }
 
-.nav-gallery {
+.paging {
   list-style: none;
   padding: 0;
-  margin: 0 0 0 5px;
+  margin: 0 0 0 12px;
   display: flex;
   column-gap: 24px;
   justify-content: center;
@@ -260,26 +263,31 @@ main {
   display: block;
 }
 
-.nav-gallery .circle {
+.paging li {
   width: 5px;
 	height: 5px;
 	background-color: #48555d;
 	border-radius: 100%;
   cursor: pointer;
+  position: relative;
 }
 
-.nav-gallery .border {
+.paging .active::after,
+.paging li:hover::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -10px;
   display: block;
   border: 2px solid #ed751b;
   padding: 10px;
   border-radius: 100%;
 }
 
-.nav-gallery .active-circle {
+.paging .active,
+.paging li:hover,
+.services .paging li:hover {
   background-color: #ed751b;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .music-player .content {
@@ -294,12 +302,14 @@ main {
   line-height: 100px;
   color: #fff;
   width: 1550px;
+  font-weight: 100;
+  margin: 0 0 58px 10px;
 }
 
 .player {
   display: flex;
   align-items: center;
-  margin: 0 0 17px 37px;
+  margin: 0 0 76px 47px;
 }
 
 .player button {
@@ -313,6 +323,7 @@ main {
 
 .strategy {
   padding: 306px 0 0;
+  margin: 0 0 172px;
   background: url(image/map.png) no-repeat -359px 83px;
 }
 
@@ -322,7 +333,7 @@ main {
 }
 
 .strategy figure {
-  margin: 0 0 0 38px;
+  margin: 0 0 0 43px;
 }
 
 .strategy figcaption {
@@ -384,19 +395,16 @@ main {
 }
 
 .company-offer {
-  padding: 172px 0 127px;
-}
-
-.company-offer .content {
   display: flex;
-  column-gap: 108px;
+  column-gap: 110px;
+  margin: 0 0 127px;
 }
 
 .company-offer article {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: -13px 0 0 144px;
+  margin: -13px 0 0 201px;
 }
 
 .company-offer h1 {
@@ -421,15 +429,16 @@ main {
 }
 
 .portfolio {
-  padding: 157px 0 153px;
+  padding: 156px 0 0;
+  margin: 0 0 247px;
   text-align: center;
-  background: url(image/portfolioImages/portfolio.png) no-repeat 45px 2px;
+  background: url(image/portfolioImages/portfolio.png) no-repeat 52px 2px;
 }
 
 .portfolio h1 {
   font: 18px/50px PlayfairDisplay-Bold, serif;
   color: #fff;
-  margin: 0 0 101px 10px;
+  margin: 0 0 84px 19px;
   letter-spacing: 11px;
   position: relative;
 }
@@ -441,17 +450,18 @@ main {
   background-color: #ed7b16;
   width: 2px;
   height: 129px;
-  top: 51px;
-  right: 50.1%;
+  top: 50px;
+  right: 50.2%;
+  z-index: 1;
 }
 
 .portfolio ul {
-  margin: 0 33px;
+  margin: 0 26px 0 64px;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 112px 0;
+  grid-gap: 122px 31px;
 }
 
 .portfolio li {
@@ -459,18 +469,19 @@ main {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  padding: 20px 0 20px;
+  position: relative;
+  width: 521px;
 }
 
 .portfolio li:hover {
-  background: url(image/portfolioImages/activeElementBackground.png) no-repeat 28px 0;
-  padding: 20px 0 20px;
-  transform: translate(0, -16px);
+  background-image: linear-gradient(to right top, #5d00c9, #d5536f);
 }
 
 .portfolio li:hover:after {
   content: "";
-  bottom: 42px;
-  right: 49px;
+  bottom: 20px;
+  right: 20px;
   position: absolute;
   display: block;
   border: 60px solid transparent;
@@ -511,7 +522,8 @@ main {
   text-align: center;
   width: 160px;
   letter-spacing: 2px;
-  transform: translate(0, -24px);
+  position: absolute;
+  bottom: -9px;
 }
 
 .portfolio li:hover > .button {
@@ -574,7 +586,7 @@ main {
   background: url(image/portfolioImages/vectorSmartObject.png) no-repeat 0;
   display: none;
   width: 1px;
-  transform: translate(205px, -42px);
+  transform: translate(205px, -52px);
   z-index: 1;
 }
 
@@ -583,8 +595,8 @@ main {
 }
 
 .services {
-  padding: 61px 0 130px;
-  background: url(image/roadPicture.png) no-repeat 0 175px;
+  margin: 0 0 276px;
+  background: url(image/roadPicture.png) no-repeat 0 207px;
   text-align: center;
 }
 
@@ -592,7 +604,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 164px 21px;
+  margin: 0 0 128px 28px;
 }
 
 .services strong {
@@ -615,7 +627,7 @@ main {
   margin: 0 0 48px;
 }
 
-.services a {
+.services .link {
   text-decoration: none;
   color: #fff;
   font: 14px/32px Proxima-Nova-Extrabold, sans-serif;
@@ -632,14 +644,21 @@ main {
 .services .list-of-services {
   display: flex;
   list-style: none;
-  margin: 0 0 139px 141px;
+  margin: 0 0 78px 99px;
   padding: 0;
-  column-gap: 69px;
+  column-gap: 20px;
   text-align: start;
 }
 
+.list-of-services li {
+  padding: 39px 48px 0;
+  height: 339px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 .list-of-services li:nth-child(2n) {
-  margin: 0 98px 0 0;
+  margin: 0 50px 0 0;
 }
 
 .services .list-of-services img {
@@ -648,10 +667,6 @@ main {
 
 .services .list-of-services li:hover {
   background-image: linear-gradient(to right top, #5d00c9, #d5536f);
-  padding: 38px 48px 0;
-  height: 340px;
-  margin: -38px 0 0 -49px;
-  border-radius: 3px;
 }
 
 .services h2 {
@@ -666,19 +681,16 @@ main {
   color: #fff;
 }
 
-.services .nav-gallery {
-  margin: 0 0 512px 25px;
+.services .paging {
+  margin: 0 0 512px 32px;
 }
 
-.services .nav-gallery li {
+.services .paging li {
+  background-color: #fff;
   cursor: pointer;
 }
 
-.services .nav-gallery .circle {
-  background-color: #fff;
-}
-
-.services .nav-gallery .active-circle {
+.services .paging .active {
   background-color: #ed751b;
 }
 
@@ -686,22 +698,24 @@ main {
   font-size: 70px;
   line-height: 95.67px;
   color: #fff;
-  margin: -4px 0 0 20px;
+  margin: -4px 0 0 26px;
 }
 
-.services .contact address {
+.services .contact .email {
   font-style: normal;
   position: relative;
+  text-decoration: none;
+  color: #fff;
 }
 
-.services .contact address::after {
+.services .contact .email::after {
   content: "";
   display: block;
   position: absolute;
   height: 2px;
   width: 480px;
   background-color: #ac378e;
-  left: 36.6%;
+  left: -4px;
   top: 95px;
 }
 
@@ -709,15 +723,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 146px 0 209px;
+  margin: 0 0 209px;
   flex: 0 0 auto;
 }
 
 #footer .logo {
-  margin: 0 0 54px;
+  margin: 0 0 54px 115px;
 }
 
-#footer .nav-block {
+.footer-navigation {
+  margin: 0 0 0 113px;
+}
+
+.footer-navigation ul {
   display: flex;
   list-style: none;
   margin: -2px 13px 56px 0;
@@ -725,7 +743,7 @@ main {
   position: relative;
 }
 
-#footer .nav-block::before {
+.footer-navigation ul::before {
   content: "";
   display: block;
   position: absolute;
@@ -736,7 +754,7 @@ main {
   background-image: linear-gradient(to right, #d5536f, #5d00c9);
 }
 
-#footer .nav-block::after {
+.footer-navigation ul::after {
   content: "";
   display: block;
   position: absolute;
@@ -747,30 +765,30 @@ main {
   background-image: linear-gradient(to right, #5d00c9, #d5536f);
 }
 
-#footer .nav-block li {
+.footer-navigation ul li {
   font: 14px/14px Lato-Regular, sans-serif;
   letter-spacing: 2px;
   color: #6c7276;
 }
 
-#footer .nav-block a {
+.footer-navigation ul a {
   text-decoration: none;
   color: #6c7276;
   margin: 0 25px 0 0;
 }
 
-#footer .nav-block a:hover {
+.footer-navigation ul a:hover {
   color: #a53689;
 }
 
-#footer .nav-block .active {
+.footer-navigation ul .active {
   color: #a53689;
 }
 
 #footer .social-networks {
   list-style: none;
   display: flex;
-  margin: 0 36px 0 0;
+  margin: 0 0 0 79px;
   justify-content: center;
   column-gap: 47px;
 }
@@ -809,3 +827,4 @@ main {
 #footer .social-networks .behance {
   background-position: -202px 0px;
 }
+
