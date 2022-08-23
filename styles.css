@@ -40,7 +40,6 @@
 
 body {
   background-color: #111619;
-  width: 1920px;
   font: 16px/24px PlayfairDisplay-Regular, sans-serif;
   margin: 0 auto;
 }
@@ -146,7 +145,7 @@ body {
 }
 
 .gallery {
-  background: url(image/backgroundGallery.png) no-repeat 51px 184px;
+  background: url(image/backgroundGallery.png) no-repeat 50% 184px;
   margin: 0 0 73px;
 }
 
@@ -284,7 +283,7 @@ body {
 .strategy {
   padding: 306px 0 0;
   margin: 0 0 172px;
-  background: url(image/map.png) no-repeat -359px 83px;
+  background: url(image/map.png) no-repeat 50% 83px;
 }
 
 .strategy .content {
@@ -355,16 +354,19 @@ body {
 }
 
 .company-offer {
-  display: flex;
-  column-gap: 110px;
   margin: 0 0 127px;
+}
+
+.company-offer .content {
+  display: flex;
+  column-gap: 107px;
 }
 
 .company-offer article {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin: -13px 0 0 201px;
+  margin: -13px 0 0 152px;
 }
 
 .company-offer h1 {
@@ -392,7 +394,7 @@ body {
   padding: 156px 0 0;
   margin: 0 0 249px;
   text-align: center;
-  background: url(image/portfolioImages/portfolio.png) no-repeat 52px 2px;
+  background: url(image/portfolioImages/portfolio.png) no-repeat 50% 2px;
 }
 
 .portfolio h1 {
@@ -517,8 +519,8 @@ body {
 }
 
 .services {
-  margin: 0 0 276px;
-  background: url(image/roadPicture.png) no-repeat 0 207px;
+  margin: 0 0 278px;
+  background: url(image/roadPicture.png) no-repeat 50% 207px;
   text-align: center;
 }
 
@@ -645,15 +647,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 209px;
+  padding: 0 0 209px;
 }
 
 #footer .logo {
-  margin: 0 0 54px 95px;
+  margin: 0 7px 54px 0;
 }
 
 .footer-navigation {
-  margin: 0 0 0 88px;
+  margin: 0 10px 0 0;
 }
 
 .footer-navigation ul {
@@ -709,7 +711,7 @@ body {
 #footer .social-networks {
   list-style: none;
   display: flex;
-  margin: 0 0 0 55px;
+  margin: 0 46px 0 0;
   justify-content: center;
   column-gap: 47px;
 }

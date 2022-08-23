@@ -3,6 +3,7 @@ const animationPanding = () => {
   const currentPagingIndex = $('.pointer.active').index();
   const nextPagingIndex = currentPagingIndex + 1;
   const nextPaging = $('.pointer').eq(nextPagingIndex);
+  
   currentPaging.removeClass('active');
 
   if (nextPagingIndex === ($('.pointer:last').index() + 1)) {
@@ -17,6 +18,7 @@ $('.button-gallery').click(() => {
   const currentImageIndex = $('.img.active').index();
   const nextImageIndex = currentImageIndex + 1;
   const nextImage = $('.img').eq(nextImageIndex);
+
   currentImage.fadeOut(200);
   currentImage.removeClass('active');
 
