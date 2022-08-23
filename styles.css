@@ -41,7 +41,7 @@
 body {
   background-color: #111619;
   font: 16px/24px PlayfairDisplay-Regular, sans-serif;
-  margin: 0 auto;
+  margin: 0;
   min-width: 1820px;
 }
 
@@ -64,7 +64,7 @@ body {
 }
 
 #header .contact-number {
-  font: 18px/16px serif;
+  font: 18px/16px PlayfairDisplay-Regular, serif;
   letter-spacing: 2px;
   color: #6b7175;
   margin: 0 0 0 11px;
@@ -269,7 +269,8 @@ body {
 .player {
   display: flex;
   align-items: center;
-  margin: 0 0 76px 32px;
+  margin: 0 4px 76px 0;
+  position: relative;
 }
 
 .player button {
@@ -278,12 +279,13 @@ body {
   cursor: pointer;
   width: 35px;
   height: 40px;
-  transform: translate(-215px, 0);
+  position: absolute;
+  left: 47%;
 }
 
 .strategy {
   padding: 306px 0 0;
-  margin: 0 0 172px;
+  margin: 0 0 242px;
   background: url(image/map.png) no-repeat 50% 83px;
 }
 
@@ -294,49 +296,45 @@ body {
 
 .strategy figure {
   margin: 0 0 0 46px;
+  position: relative;
 }
 
 .strategy figcaption {
   width: 110px;
-  transform: translate(255px, -163px);
+  position: absolute;
+  bottom: 11%;
+  left: 29%;
 }
 
-.strategy time,
-.company-offer time {
+.description time {
   font-size: 44px;
   line-height: 70px;
   color: #fff;
 }
 
-.strategy mark,
-.company-offer mark {
+.description mark {
   font-size: 44px;
   line-height: 70px;
   color: #22292d;
   background: none;
 } 
 
-.strategy article {
-  margin: -44px 0 0;
-}
-
-.strategy h1,
-.company-offer h1 {
+.description h1 {
   color: #fff;
   font-size: 44px;
-  line-height: 58px;
+  line-height: 60px;
+  font-weight: normal;
+  margin: -7px 0 36px;
 }
 
-.strategy p,
-.company-offer p {
+.description p {
   margin: 0 0 38px;
   width: 630px;
   font: 22px/34px Lato-Light, sans-serif;
   color: #fff;
 }
 
-.strategy a ,
-.company-offer a {
+.description a {
   background-image: linear-gradient(to right, #e84b37, #ee7d16);
   font: 14px/32px Proxima-Nova-Extrabold, serif;
   color: #fff;
@@ -349,13 +347,12 @@ body {
   letter-spacing: 2px;
 }
 
-.strategy a:hover ,
-.company-offer a:hover {
+.description a:hover {
   text-decoration: underline;
 }
 
 .company-offer {
-  margin: 0 0 127px;
+  margin: 0 0 201px;
 }
 
 .company-offer .content {
@@ -384,11 +381,14 @@ body {
 
 .company-offer figure {
   margin: 0;
+  position: relative;
 }
 
 .company-offer figcaption {
   width: 110px;
-  transform: translate(520px, -157px);
+  position: absolute;
+  bottom: 10.5%;
+  right: 28%;
 }
 
 .portfolio {
@@ -437,6 +437,12 @@ body {
   width: 521px;
 }
 
+.portfolio li div {
+  width: 480px;
+  height: 630px;
+  background-color: #fff;
+}
+
 .portfolio li:hover {
   background-image: linear-gradient(to right top, #5d00c9, #d5536f);
 }
@@ -454,23 +460,14 @@ body {
 
 .portfolio figure {
   margin: 0;
-  width: 480px;
-  height: 630px;
-  background-color: #fff;
+  height: 471px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-
-.portfolio article {
-  position: absolute;
-  bottom: 53px;
 }
 
 .portfolio h2 {
-  margin: 0;
+  margin: 0 0 16px;
   font: 30px/32px Proxima-Nova-Semibold, sans-serif;
   color: #000;
 }
@@ -529,7 +526,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 128px 15px;
+  margin: 0 0 124px 15px;
 }
 
 .services strong {
@@ -564,6 +561,10 @@ body {
 
 .services a:hover {
   text-decoration: underline;
+}
+
+.services .services-gallery {
+  margin: 0 0 512px;
 }
 
 .services .list-of-services {
