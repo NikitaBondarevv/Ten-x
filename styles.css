@@ -71,30 +71,27 @@ body {
 }
 
 .header-navigation {
-  display: flex;
-  column-gap: 75px;
-  margin: 3px 0 0 40%;
+  margin: 18px 6px 0 40%;
 }
 
-#header ul {
+.header-navigation ul {
   display: flex;
   column-gap: 67px;
-  margin: 30px 6px 0;
   padding: 0;
 }
 
-#header ul .active {
+.header-navigation ul .active {
   color: #a53689;
 }
 
-#header ul a {
+.header-navigation ul a {
   color: #53595c;
   letter-spacing: 2.5px;
   text-decoration: none;
   font: 15px/15px Lato-Bold, sans-serif;
 }
 
-#header ul a:hover {
+.header-navigation ul a:hover {
   color: #a53689;
 }
 
@@ -146,7 +143,7 @@ body {
 }
 
 .gallery {
-  background: url(image/backgroundGallery.png) no-repeat 50% 184px;
+  background: url(image/backgroundGallery.png) no-repeat 47% 184px;
   margin: 0 0 73px;
 }
 
@@ -166,6 +163,7 @@ body {
 .gallery-images .img {
   display: none;
   position: absolute;
+  margin: 0 0 0 44px;
 }
 
 .gallery-images .active {
@@ -179,12 +177,12 @@ body {
   width: 1210px;
 }
 
-.gallery figure img {
-  margin: 0 0 32px 46px;
+.gallery-images img {
+  margin: 0 0 32px;
 }
 
 .gallery figcaption {
-  margin: 0 0 0 131px;
+  margin: 0 0 0 35px;
   text-align: center;
   font-size: 28px;
   line-height: 28px;
@@ -200,7 +198,7 @@ body {
   background-color: #14191d;
   position: relative;
   cursor: pointer;
-  transform: translate(1212px, 215px);
+  transform: translate(1210px, 215px);
 }
 
 .button-gallery::after {
@@ -334,7 +332,7 @@ body {
   color: #fff;
 }
 
-.description a {
+.button {
   background-image: linear-gradient(to right, #e84b37, #ee7d16);
   font: 14px/32px Proxima-Nova-Extrabold, serif;
   color: #fff;
@@ -347,7 +345,7 @@ body {
   letter-spacing: 2px;
 }
 
-.description a:hover {
+.button:hover {
   text-decoration: underline;
 }
 
@@ -478,16 +476,6 @@ body {
 }
 
 .portfolio a {
-  background-image: linear-gradient(to right, #e84b37, #ee7d16);
-  font: 14px/32px Proxima-Nova-Extrabold, serif;
-  color: #fff;
-  text-decoration: none;
-  padding: 11px 19px;
-  border-radius: 2px;
-  display: block;
-  text-align: center;
-  width: 160px;
-  letter-spacing: 2px;
   position: absolute;
   bottom: -9px;
 }
@@ -507,8 +495,10 @@ body {
 .portfolio .active-button {
   background: url(image/portfolioImages/vectorSmartObject.png) no-repeat 0;
   display: none;
-  width: 1px;
-  transform: translate(205px, -52px);
+  width: 36px;
+  height: 20px;
+  right: 40px;
+  bottom: 40px;
   z-index: 1;
 }
 
