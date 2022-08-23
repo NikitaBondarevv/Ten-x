@@ -464,6 +464,10 @@ body {
   justify-content: center;
 }
 
+.portfolio article {
+  padding: 0 50px;
+}
+
 .portfolio h2 {
   margin: 0 0 16px;
   font: 30px/32px Proxima-Nova-Semibold, sans-serif;
