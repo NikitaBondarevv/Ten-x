@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>TEN-X</title>
 </head>
 <body>
@@ -33,48 +34,45 @@
     <div class="gallery">
       <div class="content">
         <div class="gallery-images">
-          <ul id="images">
-            <li class="active">
-              <figure>
-                <img src="image/10XImage.png" alt="10X image">
-                <figcaption>
-                  <span>YOUR PRESENCE</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="image/10XImage.png" alt="Image">
-                <figcaption>
-                  <span>IMAGE 2</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="image/10XImage.png" alt="Image">
-                <figcaption>
-                  <span>IMAGE 3</span>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="image/10XImage.png" alt="Image">
-                <figcaption>
-                  <span>IMAGE 4</span>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
+          <div class="img active">
+            <figure>
+              <img src="image/10XImage.png" alt="10X image">
+              <figcaption>
+                <span>YOUR PRESENCE</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img src="image/10XImage.png" alt="Image">
+              <figcaption>
+                <span>IMAGE 2</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img src="image/10XImage.png" alt="Image">
+              <figcaption>
+                <span>IMAGE 3</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img src="image/10XImage.png" alt="Image">
+              <figcaption>
+                <span>IMAGE 4</span>
+              </figcaption>
+            </figure>
+          </div>
           <button class="button-gallery"></button>
-          <button class="button-gallery hidden"></button>
         </div>
         <ul class="paging">
-          <li class="active"></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li class="pointer active"></li>
+          <li class="pointer"></li>
+          <li class="pointer"></li>
+          <li class="pointer"></li>
         </ul>
       </div>
     </div>
@@ -275,5 +273,5 @@
     </ul>
   </footer>
 </body>
-<script src="main.js"></script>
+<script src="galleryPlugin.js"></script>
 </html>

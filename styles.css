@@ -158,8 +158,18 @@ body {
 
 .gallery .gallery-images {
   margin: 0 0 177px;
-  display: flex;
-  align-items: center;
+  position: relative;
+  width: 1300px;
+  height: 528px;
+}
+
+.gallery-images .img {
+  display: none;
+  position: absolute;
+}
+
+.gallery-images .active {
+  display: block;
 }
 
 .gallery figure {
@@ -190,7 +200,7 @@ body {
   background-color: #14191d;
   position: relative;
   cursor: pointer;
-  transform: translate(15px, 3px);
+  transform: translate(1212px, 215px);
 }
 
 .button-gallery::after {
@@ -204,33 +214,6 @@ body {
   background: url(image/ellipse2.png) no-repeat;
 }
 
-.hidden {
-  display: none;
-  width: 108px;
-  height: 108px;
-  border: none;
-  border-radius: 100%;
-  background-color: #14191d;
-  position: relative;
-  cursor: pointer;
-  transform: translate(-1377px, 3px) rotate(180deg);
-}
-
-.hidden::after {
-  right: -8px;
-  position: absolute;
-  content: "";
-  display: block;
-  width: 91px;
-  height: 77px;
-  top: -3px;
-  background: url(image/ellipse2.png) no-repeat;
-}
-
-.show-button {
-  display: block;
-}
-
 .paging {
   list-style: none;
   padding: 0;
@@ -238,21 +221,6 @@ body {
   display: flex;
   column-gap: 24px;
   justify-content: center;
-}
-
-#images {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-#images li {
-  display: none;
-}
-
-#images .active {
-  display: block;
 }
 
 .paging li {
