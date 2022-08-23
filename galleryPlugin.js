@@ -3,7 +3,7 @@ const animationPanding = () => {
   const currentPagingIndex = $('.pointer.active').index();
   const nextPagingIndex = currentPagingIndex + 1;
   const nextPaging = $('.pointer').eq(nextPagingIndex);
-  
+
   currentPaging.removeClass('active');
 
   if (nextPagingIndex === ($('.pointer:last').index() + 1)) {
@@ -31,4 +31,24 @@ $('.button-gallery').click(() => {
   }
 
   animationPanding();
-})
+});
+
+$('.gallery .paging').click((e) => {
+  if (e.target.tagName !== 'LI') return;
+
+  const target = $(e.target);
+  const currentPointer = $('.gallery .pointer.active');
+  const pointerIndex = $('.gallery .pointer').index(target);
+  const currentImage = $('.img.active');
+  const nextImage = $('.img').eq(pointerIndex);
+
+  currentPointer.removeClass('active');
+  target.addClass('active');
+
+  if (currentPointer !== currentImage) {
+    currentImage.fadeOut(200);
+    currentImage.removeClass('active');
+    nextImage.fadeIn(1500);
+    nextImage.addClass('active');
+  }
+});
