@@ -53,12 +53,12 @@ body {
 #header {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 29px;
+  padding: 34px 0 29px;
 }
 
 .logo-and-contacts {
   display: flex;
-  column-gap: 85px;
+  column-gap: 87px;
   margin: 32px 0 0 6px;
   height: 30px;
 }
@@ -73,7 +73,7 @@ body {
 .header-navigation {
   display: flex;
   column-gap: 75px;
-  margin: 3px 0 0 40.5%;
+  margin: 3px 0 0 40%;
 }
 
 #header ul {
@@ -100,7 +100,7 @@ body {
 
 #header .social-networks {
   padding: 0;
-  margin: 34px 0 0;
+  margin: 34px 11px 0 0;
   display: flex;
   flex-direction: column;
   row-gap: 39px;
@@ -147,7 +147,7 @@ body {
 
 .gallery {
   background: url(image/backgroundGallery.png) no-repeat 51px 184px;
-  margin: 0 0 75px;
+  margin: 0 0 73px;
 }
 
 .gallery .content {
@@ -180,11 +180,11 @@ body {
 }
 
 .gallery figure img {
-  margin: 0 0 32px 59px;
+  margin: 0 0 32px 46px;
 }
 
 .gallery figcaption {
-  margin: 0 0 0 161px;
+  margin: 0 0 0 131px;
   text-align: center;
   font-size: 28px;
   line-height: 28px;
@@ -217,7 +217,7 @@ body {
 .paging {
   list-style: none;
   padding: 0;
-  margin: 0 0 0 12px;
+  margin: 0 6px 0 0;
   display: flex;
   column-gap: 24px;
   justify-content: center;
@@ -263,13 +263,13 @@ body {
   color: #fff;
   width: 1550px;
   font-weight: 100;
-  margin: 0 0 58px 10px;
+  margin: 0 0 58px;
 }
 
 .player {
   display: flex;
   align-items: center;
-  margin: 0 0 76px 47px;
+  margin: 0 0 76px 32px;
 }
 
 .player button {
@@ -293,7 +293,7 @@ body {
 }
 
 .strategy figure {
-  margin: 0 0 0 43px;
+  margin: 0 0 0 46px;
 }
 
 .strategy figcaption {
@@ -390,7 +390,7 @@ body {
 
 .portfolio {
   padding: 156px 0 0;
-  margin: 0 0 247px;
+  margin: 0 0 249px;
   text-align: center;
   background: url(image/portfolioImages/portfolio.png) no-repeat 52px 2px;
 }
@@ -398,7 +398,7 @@ body {
 .portfolio h1 {
   font: 18px/50px PlayfairDisplay-Bold, serif;
   color: #fff;
-  margin: 0 0 84px 19px;
+  margin: 0 0 84px 6px;
   letter-spacing: 11px;
   position: relative;
 }
@@ -416,7 +416,7 @@ body {
 }
 
 .portfolio ul {
-  margin: 0 26px 0 64px;
+  margin: 0 41px 0 66px;
   padding: 0;
   list-style: none;
   display: grid;
@@ -458,6 +458,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.portfolio article {
+  position: absolute;
+  bottom: 53px;
 }
 
 .portfolio h2 {
@@ -494,50 +500,6 @@ body {
   text-decoration: underline;
 }
 
-.end-of-thino img {
-  margin: -14px 0 87px;
-}
-
-.end-of-thino h2 {
-  margin: 0 0 19px;
-}
-
-.het-boerenveensche img {
-  margin: -41px 38px -12px 0;
-}
-
-.het-boerenveensche h2 {
-  margin: 0 0 16px;
-}
-
-.bluerocket img {
-  margin: -53px 0 73px 4px;
-}
-
-.bluerocket h2 {
-  margin: 0 0 22px;
-}
-
-.harmony-poliform img {
-  margin: -6px 0 35px 15px;
-}
-
-.harmony-poliform h2 {
-  margin: 0 0 13px;
-}
-
-.rowenta-studiodry img {
-  margin: 12px 0 92px 19px;
-}
-
-.rowenta-studiodry h2 {
-  margin: 0 0 15px;
-}
-
-.fritsch-durisotti img {
-  margin: -8px 16px 33px 0;
-}
-
 .portfolio .active {
   position: relative;
 }
@@ -564,7 +526,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 128px 28px;
+  margin: 0 0 128px 15px;
 }
 
 .services strong {
@@ -604,7 +566,7 @@ body {
 .services .list-of-services {
   display: flex;
   list-style: none;
-  margin: 0 0 78px 99px;
+  margin: 0 0 75px 99px;
   padding: 0;
   column-gap: 20px;
   text-align: start;
@@ -642,7 +604,7 @@ body {
 }
 
 .services .paging {
-  margin: 0 0 512px 32px;
+  margin: 0 0 512px 16px;
 }
 
 .services .paging li {
@@ -658,7 +620,7 @@ body {
   font-size: 70px;
   line-height: 95.67px;
   color: #fff;
-  margin: -4px 0 0 26px;
+  margin: -4px 0 0 13px;
 }
 
 .services .contact .email {
@@ -687,11 +649,11 @@ body {
 }
 
 #footer .logo {
-  margin: 0 0 54px 115px;
+  margin: 0 0 54px 95px;
 }
 
 .footer-navigation {
-  margin: 0 0 0 113px;
+  margin: 0 0 0 88px;
 }
 
 .footer-navigation ul {
@@ -747,7 +709,7 @@ body {
 #footer .social-networks {
   list-style: none;
   display: flex;
-  margin: 0 0 0 79px;
+  margin: 0 0 0 55px;
   justify-content: center;
   column-gap: 47px;
 }

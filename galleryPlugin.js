@@ -12,7 +12,7 @@ const animationPanding = () => {
   }
 }
 
-$('.button-gallery').click(function () {
+$('.button-gallery').click(() => {
   const currentImage = $('.img.active');
   const currentImageIndex = $('.img.active').index();
   const nextImageIndex = currentImageIndex + 1;
