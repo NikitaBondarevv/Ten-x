@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <title>TEN-X</title>
 </head>
 <body>
@@ -10,42 +11,283 @@
     <div class="logo-and-contacts">
       <a href="#"><img src="image/tenXLogo.png" alt="Ten-x Logo"></a>
       <div class="contacts">
-        <img src="image/tubeIcon.png" alt="Tube icon">
+        <img src="image/phoneIcon.png" alt="Phone icon">
         <span class="contact-number">+71 88 569 6822</span>
       </div>
     </div>
-    <nav class="navigation">
-      <ul class="nav-block">
-        <li><a href="#">ABOUT</a></li>
+    <nav class="header-navigation">
+      <ul>
+        <li><a href="#" class="active">ABOUT</a></li>
         <li><a href="#">PROJECTS</a></li>
         <li><a href="#">BLOG</a></li>
         <li><a href="#">CONTACT</a></li>
       </ul>
-      <ul class="social-networks">
-        <li><a href="#" class="instagram">Instagram</a></li>
-        <li><a href="#" class="facebook">Facebook</a></li>
-        <li><a href="#" class="twitter">Twitter</a></li>
-        <li><a href="#" class="behance">Behance</a></li>
-      </ul>
     </nav>
+    <ul class="social-networks">
+      <li><a href="#" class="instagram">Instagram</a></li>
+      <li><a href="#" class="facebook">Facebook</a></li>
+      <li><a href="#" class="twitter">Twitter</a></li>
+      <li><a href="#" class="behance">Behance</a></li>
+    </ul>
   </header>
   <main>
     <div class="gallery">
       <div class="content">
-        <figure>
-          <img src="image/10XImage.png" alt="10X image">
+        <div class="gallery-images">
+          <div class="img active">
+            <figure>
+              <img src="image/10XImage.png" alt="10X image">
+              <figcaption>
+                <span>YOUR PRESENCE</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img src="image/10XImage.png" alt="Image">
+              <figcaption>
+                <span>IMAGE 2</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img src="image/10XImage.png" alt="Image">
+              <figcaption>
+                <span>IMAGE 3</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="img">
+            <figure>
+              <img src="image/10XImage.png" alt="Image">
+              <figcaption>
+                <span>IMAGE 4</span>
+              </figcaption>
+            </figure>
+          </div>
           <button class="button-gallery"></button>
-        </figure>
-        <span>YOUR PRESENCE</span>
-        <ul class="nav-gallery">
-          <li class="circle active"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
+        </div>
+        <ul class="paging">
+          <li class="pointer active"></li>
+          <li class="pointer"></li>
+          <li class="pointer"></li>
+          <li class="pointer"></li>
         </ul>
       </div>
     </div>
+    <div class="music-player">
+      <article class="content">
+        <div class="player">
+          <img src="image/audioPlayer.png" alt="Audio player">
+          <button><img src="image/playButton.png" alt="play button"></button>
+        </div>
+        <h1>
+          We're a designer & a developer who love building cool stuff with our clients.
+        </h1>
+        <img src="image/painting.png" alt="Painting">
+      </article>
+    </div>
+    <div class="strategy description">
+      <div class="content">
+        <figure>
+          <img src="image/productImage01.png" alt="Product image">
+          <figcaption>
+            <time>01<mark>/05</mark></time>
+          </figcaption>
+        </figure>
+        <article>
+          <h1>
+            Strategy & Creative<br>We design and build digital products,<br>and services we believe in.
+          </h1>
+          <p>
+            Strategy is not something you can retrospectively apply in order to make irrelevant ideas seem coherent strategists start out with a clear approach to ensure our creative proposal will match your business needs. 
+          </p>
+          <a href="#" class="button">LEARN MORE</a>
+        </article>
+      </div>
+    </div>
+    <div class="company-offer description">
+      <div class="content">
+        <article>
+          <h1>
+            We are bunch of super-skilled<br>guys and gals who love<br>to create websites.
+          </h1>
+          <p>
+            Filema Rodion proposes individual, airtight packages that keep the product's characteristics unchanged for treats for the marriage, baptism and every social event.
+          </p>
+          <a href="#" class="button">LEARN MORE</a>
+        </article>
+        <figure>
+          <img src="image/productImage02.png" alt="Product image">
+          <figcaption>
+            <time>02<mark>/05</mark></time>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="portfolio">
+      <div class="content">
+        <h1>SELECTED PROJECTS</h1>
+        <ul>
+          <li>
+            <div>
+              <figure>
+                <img src="image/portfolioImages/vacuumCleaner.png" alt="Vacuum cleaner">
+              </figure>
+              <article>
+                <h2>End of Thino</h2>
+                <span>
+                  When the switch is on, it cuts off the data transmission between the charging device and the source
+                </span>
+              </article>
+            </div>
+            <a href="#" class="active-button"></a>
+            <a href="#" class="button">SHOP NOW</a>
+          </li>
+          <li>
+            <div>
+              <figure>
+                <img src="image/portfolioImages/vacuumCleanerTwo.png" alt="Vacuum cleaner">
+              </figure>
+              <article>
+                <h2>Het Boerenveensche</h2>
+                <span>
+                  Thino has a physical switch that activates its turbo-charging feature
+                </span>
+              </article>
+            </div>
+            <a href="#" class="active-button"></a>
+            <a href="#" class="button">SHOP NOW</a>
+          </li>
+          <li>
+            <div>
+              <figure>
+                <img src="image/portfolioImages/flashDrive.png" alt="Flash drive">
+              </figure>
+              <article>
+                <h2>Bluerocket</h2>
+                <span>
+                  The World's FIrst VR & AR Phone Case
+                </span>
+              </article>
+            </div>
+            <a href="#" class="active-button"></a>
+            <a href="#" class="button">SHOP NOW</a>
+          </li>
+          <li>
+            <div>
+              <figure>
+                <img src="image/portfolioImages/tShirt.png" alt="T-shirt">
+              </figure>
+              <article>
+                <h2>Harmony / Poliform</h2>
+                <span>
+                  This chair joins chaos and order in a symbiotic relationship, full of expression and rhythm
+                </span>
+              </article>
+            </div>
+            <a href="#" class="active-button"></a>
+            <a href="#" class="button">SHOP NOW</a>
+          </li>
+          <li>
+            <div>
+              <figure>
+                <img src="image/portfolioImages/dryer.png" alt="Dryer">
+              </figure>
+              <article>
+                <h2>Rowenta Studiodry</h2>
+                <span>
+                  Rowenta Studiodry 2nd Generation in 2012
+                </span>
+              </article>
+            </div>
+            <a href="#" class="active-button"></a>
+            <a href="#" class="button">SHOP NOW</a>
+          </li>
+          <li>
+            <div>
+              <figure>
+                <img src="image/portfolioImages/electronicBicycle.png" alt="Electronic bicycle">
+              </figure>
+              <article>
+                <h2>Fritsch Durisotti</h2>
+                <span>
+                  Spline Spline is a new way of producing wicker furniture that dramatically 
+                </span>
+              </article>
+            </div>
+            <a href="#" class="active-button"></a>
+            <a href="#" class="button">SHOP NOW</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="services">
+      <div class="content">
+        <article>
+          <strong>SERVICES WE SPECIALIZE IN</strong>
+          <h1>Expert input for maximum growth.</h1>
+          <strong class="text-content">DIGITAL / DIGITAL / MARKETING / ECOMMERCE / BRANDING</strong>
+          <a href="#" class="link">VIEW PRICING DETAILS</a>
+        </article>
+        <div class="services-gallery">
+          <ul class="list-of-services">
+            <li>
+              <img src="image/agilityImage.png" alt="Agility">
+              <h2>Agility</h2>
+              <p>
+                We believe in a seamless client partnership that connects us into a single unified team. We're not only agile in code but in discovery, and design.
+              </p>
+            </li>
+            <li>
+              <img src="image/teamImage.png" alt="Team">
+              <h2>Team</h2>
+              <p>
+                Our dedicated team model ensures that every project receives the meticulous attention and resource it deserves from our Strategists, Designers, Producers, Engineers, & Filmmakers.
+              </p>
+            </li>
+            <li>
+              <img src="image/collaborationImage.png" alt="Collaboration">
+              <h2>Collaboration</h2>
+              <p>
+                Nothing we do is in isolation. Our process is extremely collaborative, leveraging our clients unique perspectives to activate our own expertise.
+              </p>
+            </li>
+          </ul>
+          <ul class="paging">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="contact">
+          <span>
+            If you'd like to get in touch, you can send ud an email directly at<br>
+            <a href="mailto:hello@10x.com" class="email">hello@10x.com</a>
+          </span>
+        </div>
+      </div>
+    </div>
   </main>
+  <footer id="footer" class="content">
+    <a href="#" class="logo"><img src="image/tenXLogo.png" alt="Ten-x logo"></a>
+    <nav class="footer-navigation">
+      <ul>
+        <li><a href="#" class="active">ABOUT</a>/</li>
+        <li><a href="#">PROJECTS</a>/</li>
+        <li><a href="#">BLOG</a>/</li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <ul class="social-networks">
+      <li><a href="#" class="twitter">Twitter</a></li>
+      <li><a href="#" class="instagram">Instagram</a></li>
+      <li><a href="#" class="facebook">Facebook</a></li>
+      <li><a href="#" class="behance">Behance</a></li>
+    </ul>
+  </footer>
 </body>
-<script src="main.js"></script>
+<script src="galleryPlugin.js"></script>
 </html>
