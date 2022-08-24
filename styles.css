@@ -63,11 +63,15 @@ body {
   height: 30px;
 }
 
+#header .contacts {
+  margin: -1px 0 0;
+}
+
 #header .contact-number {
   font: 18px/16px PlayfairDisplay-Regular, serif;
   letter-spacing: 2px;
   color: #6b7175;
-  margin: 0 0 0 11px;
+  margin: 0 0 0 13px;
 }
 
 .header-navigation {
@@ -497,7 +501,7 @@ body {
 }
 
 .portfolio .active-button {
-  background: url(image/portfolioImages/vectorSmartObject.png) no-repeat 0;
+  background: url(image/pictureForButton.png) no-repeat 0;
   display: none;
   width: 36px;
   height: 20px;
